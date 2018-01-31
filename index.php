@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html >
-<?php include_once 'widgets/head.php' ?>
+  <?php include_once 'widgets/head.php' ?>
 <body>
   <?php 
   	$task = "id";
