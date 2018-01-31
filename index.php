@@ -2,22 +2,32 @@
 <html >
 <?php include_once 'widgets/head.php' ?>
 <body>
-<?php
-  //MENU BAR
-  include_once 'modules/mod_menu.php';
-  //INTRO W IMAGE BACKGROUND
-  include_once 'modules/mod_intro.php';
-  //BRIEF INTRODUCTION
-  include_once 'modules/mod_brief_discuss.php';
-  //FEATURES
-  include_once 'modules/mod_features.php';
-  //PRICING TABLE
-  include_once 'modules/mod_pricing.php';
-  //FOOTER
-  include_once 'widgets/footer.php';
-  //SCRIPT EBBEDED
-  include_once 'widgets/script.php';
-?>
+  <?php 
+  	$task = "id";
+  	if (isset($_GET["task"])) {
+  		# code...
+  		$task = $_GET["task"];
+  	}
+  	
+  	if ($task=="contact") {
+  		# code...
+  		include_once 'controllers/c_contact.php';
+	    $controllers = new c_contact();
+	    $controllers->contact();
+  	}elseif ($task=="about") {
+  		# code...
+  		include_once 'controllers/c_about.php';
+	    $controllers = new c_about();
+	    $controllers->about();
+  	}
+  	else {
+  		# code...
+	  	include_once 'controllers/c_homepage.php';
+	    $controllers = new c_homepage();
+	    $controllers->homepage();
+  	}
+    
+  ?>
   <input name="animation" type="hidden">
   </body>
 </html>
