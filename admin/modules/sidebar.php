@@ -14,7 +14,7 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
-          <a href="#">
+          <a href="index.php?task=id">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
@@ -25,7 +25,7 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Products</a></li>
+            <li><a href="index.php?task=product"><i class="fa fa-circle-o"></i> Products</a></li>
             <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Inventory List</a></li>
             <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Serial Numbers</a></li>
           </ul>

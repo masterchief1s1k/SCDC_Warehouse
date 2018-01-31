@@ -8,7 +8,7 @@
 
                     <div class="navbar-brand" style="padding-left: 50px">
                         <a href="index.php" class="navbar-logo">
-                          <img src="assets/images/logo.png" alt="Mobirise">
+                          <img src="assets/images/logo.png" alt="SCDC">
                         </a>     
                     </div>
                 </div>

@@ -5,13 +5,27 @@
 <div class="wrapper">
   <?php
   //header
-  include_once'modules/header.php';
-
-  //Left side column. contains the logo and sidebar
-  include_once'modules/sidebar.php';
-
-  //Content Wrapper. Contains page content
-  include_once'modules/content.php';
+  $task = "id";
+  if (isset($_GET["task"])) {
+    # code...
+    $task= $_GET["task"];
+  }
+  if ($task=="id") {
+    # code...
+    include_once'controllers/c_admin_dashboard.php';
+    $controllers = new c_admin_dashboard();
+    $controllers->admin_dashboard();
+  }elseif ($task =="product") {
+    include_once'controllers/c_admin_product.php';
+    $controllers= new c_admin_product();
+    $controllers->admin_product();
+    # code...
+  }elseif ($task=="addproduct") {
+    # code...
+    include_once'controllers/c_admin_product.php';
+    $controllers= new c_admin_product();
+    $controllers->admin_add_product();
+  }
   ?>
 </div>
 <!-- ./wrapper -->
