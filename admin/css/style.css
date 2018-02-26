@@ -4945,38 +4945,28 @@ span.customSelect.changed {
     color: white;
     font-size: 16px;
 }
+/*form validation*/
 
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+.form-validate .form-group label.error {
+    display: inline;
+    margin: 5px 0;
+    color: #00a0df;
+    font-weight: 400;
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus, .form-validate .form-group input.error , .form-validate .form-group textarea.error{
+    border-color: #00a0df !important;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
+#register_form label.error {
+    display: inline;
+    margin:5px 0px;
+    width: auto;
+    color: #00a0df;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
+.checkbox, .checkbox:hover, .checkbox:focus  {
+    border:none;
 }
 
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
+

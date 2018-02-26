@@ -116,6 +116,7 @@
                                 <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                             </tr>
                         </table>
+                        
                     </div>
                     <!-- /.box-body -->
                 </div>
@@ -165,7 +166,4 @@
                 <!-- /.box -->
             </div>
         </div>
-</div>
-
-</div>
 </div>
